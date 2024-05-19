@@ -1,6 +1,9 @@
 import db from '../config/db.js';
 import { io } from '../src/server.js';
 import OpenAI from 'openai';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const handleSocketConnection = async (socket) => {
     console.log('Se ha conectado un usuario');
@@ -87,8 +90,7 @@ const initialMessage = 'Debes analizarl y ofrecer a los clientes productos segú
 
 const GPTdemo = async (results) => {
 
-
-    const openai = new OpenAI({ apiKey: '' });
+    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     const lastMessages = results.map(text => text.content);
 

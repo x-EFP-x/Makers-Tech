@@ -1,10 +1,7 @@
 import { createServer } from 'http';
 import { Server } from 'socket.io';
-import dotenv from 'dotenv';
 import app from './app.js';
 import handleSocketConnection from '../sockets/socket.js';
-
-dotenv.config();
 
 const server = createServer(app);
 const io = new Server(server, { connectionStateRecovery: {} });
