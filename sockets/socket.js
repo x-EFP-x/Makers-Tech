@@ -86,7 +86,7 @@ const handleSocketConnection = async (socket) => {
     }
 };
 
-const initialMessage = 'Debes analizarl y ofrecer a los clientes productos según sus gustos tan pronto comience la conversacion, busca los mas acordes. Si no reconoces gustos, ofrece cosas populares actualmente. Por favor evita los mensajes repetitivos. Siempre hay maximo 10 unidades de un producto es obligatorio que hables de inventario si te preguntan, eres una tienda que tiene todos los productos existentes pero con un inventario limitado, siempre lleva la cuenta';
+const initialMessage = 'Debes analizar y ofrecer a los clientes productos según sus gustos tan pronto comience la conversacion, busca los mas acordes. Si no reconoces gustos, ofrece cosas populares actualmente. Por favor evita los mensajes repetitivos. Siempre hay maximo 10 unidades de un producto es obligatorio que hables de inventario si te preguntan, eres una tienda que tiene todos los productos existentes pero con un inventario limitado, siempre lleva la cuenta';
 
 const GPTdemo = async (results) => {
 
